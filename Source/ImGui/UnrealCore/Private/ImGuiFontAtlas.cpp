@@ -54,12 +54,12 @@ ImFontAtlas& UnrealImGui::GetDefaultFontAtlas()
 			ensure(false);
 			FontConfig.GlyphRanges = FontAtlas.GetGlyphRangesDefault();
 		}
-		FPlatformString::Strcpy(FontConfig.Name, sizeof(FontConfig.Name), "zpix, 12px");
-		const FString ChineseFontPath = PluginResourcesPath / TEXT("zpix.ttf");
+		FPlatformString::Strcpy(FontConfig.Name, sizeof(FontConfig.Name), "YaHeiUI, 12px");
+		const FString ChineseFontPath = PluginResourcesPath / TEXT("YaHeiUI.ttf");
 
 		TArray<uint8> Bin;
 		ensure(FFileHelper::LoadFileToArray(Bin, *ChineseFontPath));
-		constexpr char FontName[] = "zpix, 12px";
+		constexpr char FontName[] = "YaHeiUI, 12px";
 		FCStringAnsi::Strcpy(FontConfig.Name, sizeof(FontName), FontName);
 		FontAtlas.AddFontFromMemoryTTF(Bin.GetData(), Bin.Num(), 12.0f * DPIScale, &FontConfig);
 
