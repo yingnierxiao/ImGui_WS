@@ -13,7 +13,7 @@ ImFontAtlas& UnrealImGui::GetDefaultFontAtlas()
 {
 	static ImFontAtlas DefaultFontAtlas = []
 	{
-		constexpr float DPIScale = 1.f;
+		constexpr float DPIScale = 2.f;
 		const TSharedPtr<IPlugin> Plugin = IPluginManager::Get().FindPlugin(TEXT(UE_PLUGIN_NAME));
 		const FString PluginResourcesPath = Plugin->GetBaseDir() / TEXT("Resources");
 
