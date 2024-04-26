@@ -3,6 +3,7 @@
 
 #include "UnrealImGuiLibrary.h"
 #include "imgui_internal.h"
+#include "Blueprint/BlueprintExceptionInfo.h"
 
 
 bool UImGui::CheckImGuiContextThrowError()
